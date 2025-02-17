@@ -7,11 +7,16 @@
     */
 
     //ENTRADA
+    let palavra = prompt(`me informe uma palavra`).toLowerCase();
 
 
     //PROCESSAMENTO
-
-
+    function vogais(param1) {
+        let arrPalavra = Array.from(param1);
+        let vog = arrPalavra.filter(letra => ['a', 'e', 'i', 'o', 'u'].includes(letra))
+        return vog
+    }
     //SAÍDA
-
+    let resultado = vogais(palavra);
+    alert(resultado.length)
 </script>
